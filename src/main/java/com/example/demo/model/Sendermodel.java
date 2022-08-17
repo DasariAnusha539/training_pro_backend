@@ -34,7 +34,7 @@ public class Sendermodel {
 		return accountHolderName;
 	}
 	public void setAccountHolderName(String accountHolderName) {
-		this.accountHolderName = accountHolderName;
+		this.accountHolderName = accountHolderName; 
 	}
 	public String getClearBalance() {
 		return clearBalance;

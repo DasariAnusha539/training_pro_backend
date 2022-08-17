@@ -48,5 +48,25 @@ public class Senderservice {
     	return senderRepo.findAll();
     }
     
-    
+    /*public String updateAccount(BankAccount bankAccount) {
+        
+        String res = "";
+        try {
+            BankAccount existBankAccount = bankAccountRepo.findById(bankAccount.getAccountNo()).orElse(new BankAccount());
+            
+            if((existBankAccount != null) && (existBankAccount.getAccountNo() == bankAccount.getAccountNo())) {
+                bankAccountRepo.save(bankAccount);
+                res = "Account updated successfully...";
+            }
+            else {
+                res = "Account NOT FOUND!!";
+            }
+        } catch(Exception e) {
+            res = "Something went wrong!!";
+            e.printStackTrace();
+        }
+        
+        return res;
+        
+    }*/
 }
